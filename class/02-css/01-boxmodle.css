@@ -1,0 +1,20 @@
+* {
+    box-sizing: border-box;
+}
+div {
+    height: 80px;
+    width: 80px;
+    border: 2px solid red;
+    /* padding: 20px; */
+}
+
+.pb {
+    width:500px;
+    height: 500px;
+    border: 2px solid blue;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+

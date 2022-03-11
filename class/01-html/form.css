@@ -1,0 +1,165 @@
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+* {
+    box-sizing: border-box;
+}
+body {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.form {
+    width: 670px;
+    height: 960px;
+    background-color: #FFFFFF;
+    border: 1px solid #aacdff;
+    box-shadow: 7px 7px 39px rgba(0,104,255,0.25);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form__header {
+    width: 466px;
+    height: 94px;
+    margin: 45px 100px ;
+}
+
+h2 {
+    color: #0068FF;
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 47px;
+    font-family: "Noto Sans KR", sans-serif;
+}
+
+.form__body__input {
+    margin: 45px 100px 45px 62px;
+}
+
+.form__body__input__content {
+    width: 466px;
+    font-size: 16px;
+    border: 0px solid black;
+    border-bottom: 1px solid #CFCFCF;
+    margin-bottom: 23px;
+}
+
+.form__body__input__content:focus {
+    outline: none;
+    border-bottom: 1px solid #0068FF;
+}
+#re__pw {
+    margin-bottom: 0px;
+}
+/* body__list */
+ul {
+    list-style: none;
+}
+li {
+    width: 158px;
+    height: 23.65px;
+    font-family: "Noto Sans KR", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #797979;
+    margin-bottom: 35px;
+}
+
+/* body__content들 */
+.form__body__gender {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom:37px;
+    margin-left: 265px;
+}
+
+
+.form__body__gender__radio{
+    appearance: none;
+    width: 20px;
+    height: 19.95px;
+    background: #EBEBEB;
+    border: 1px solid #D2D2D2;
+    border-radius: 100%;
+}
+.form__body__gender__radio:checked {
+    background-color: rgb(25, 118, 248);
+    border: none;
+    border-radius: 100%;
+}
+
+
+.body__gender__radio__content{
+    width: 30px;
+    height: 23.94px;
+    font-family: "Noto Sans KR", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+}
+.form__body__agree {
+    margin-left:104px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.form__body__checkbox {
+    width: 20px;
+    height: 20px;
+    background: #FFFFFF;
+    border: 1px solid #C4C4C4;
+    border-radius: 3px;
+}
+
+.form__body__checkbox__content{
+    width: 419px;
+    height: 21px;
+    font-family: "Noto Sans KR", sans-serif;    
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    color: #000000;
+}
+hr {
+    width: 470px;
+    border-top: 1px solid #cfcfcf;
+    margin-bottom: 0px;
+}
+.form__footer__submit {
+    width: 470px;
+    height: 75px;
+    background-color: #FFFFFF;
+    border: 1px solid #0068FF;
+    border-radius: 10px;
+    transition-duration: 0.4s;
+    margin: 30px 100px 70px 100px;
+}
+
+.form__footer__submit__font {
+    font-family: "Noto Sans KR", sans-serif;   
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 27px;
+    text-align: center;
+    color: #0068FF;
+}
+
+.form__footer__submit:hover{
+    background: #0070ff;
+    border: 1px solid #0068FF;
+    border-radius: 10px;
+}
+
+.form__footer__submit:hover .form__footer__submit__font {
+    color: white;
+}

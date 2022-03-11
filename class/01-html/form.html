@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <title>회원가입</title>
+    <link rel="stylesheet" href="./form.css">
+</head>
+
+<body>
+    <div class="form">
+        <div class="form__header">
+            <h2>회원 가입을 위해<br>정보를 입력해주세요</h2>
+        </div>
+        <div class="form__body">
+            <div class="form__body__input">
+                <ul>
+                    <li>* 이메일</li>
+                    <input type="email" class="form__body__input__content">
+                    <li>* 이름</li>
+                    <input type="text" class="form__body__input__content">
+                    <li>* 비밀번호</li>
+                    <input type="password" class="form__body__input__content">
+                    <li>* 비밀번호 확인</li>
+                    <input type="password" class="form__body__input__content" id="re__pw">
+                </ul>
+            </div>
+            <div class="form__body__gender"><br>
+                <input type="radio" name="gender" class="form__body__gender__radio"><span class="body__gender__radio__content">여성</span>&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="radio" name="gender" class="form__body__gender__radio"><span class="body__gender__radio__content">남성</span>
+            </div>  
+            <div class="form__body__agree">
+                <input type="checkbox" class="form__body__checkbox"> 
+                <span class="form__body__checkbox__content">&nbsp;&nbsp;이용약관 개인정보 수집 및 이용, 마케팅 활용 선택에 모두 동의합니다.</span>
+            </div>
+        </div>
+        <hr>
+        <div class="form__footer">
+            <button class="form__footer__submit">
+                <span class="form__footer__submit__font">가입하기</span>
+            </button>
+        </div>
+    </div>
+</body>
+
+</html>

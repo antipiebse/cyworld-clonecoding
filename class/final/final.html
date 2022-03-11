@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <title>회원가입</title>
+    <link rel="stylesheet" href="./final.css">
+    <script src="./final.js"></script>
+</head>
+
+<body>
+    <div class="form">
+        <div class="form__header">
+            <h2>코드캠프 회원가입</h2>
+        </div>
+        <div class="form__body">
+            <div class="form__body__input">
+                <div class="form__body__input__content"> <input type="email" placeholder="이메일을 입력해주세요.">
+                </div>
+                <div class="form__body__input__content"> <input type="text" placeholder="이름을 입력해주세요.">
+                </div>
+                <div class="form__body__input__content"> <input type="password" placeholder="비밀번호를 입력해주세요.">
+                </div>
+                <div class="form__body__input__content"> <input type="password" id="re__pw" placeholder="비밀번호를 다시 입력해주세요.">
+                </div>
+            </div>
+            <div class="form__body__phone">
+                <input type="text" id="phone1" oninput="changeFocus1()" maxlength="3">-
+                <input type="text" id="phone2" oninput="changeFocus2()" maxlength="4">-
+                <input type="text" id="phone3" maxlength="4">
+            </div>
+            <div class="form__body__auth">
+                <div class="auth_1">
+                    <div id="auth">000000</div>
+                    <button onclick="randomToken()">인증번호 생성</button>
+                </div>
+                <div class="auth_2">
+                    <div id="time">3:00</div>
+                    <button id="check">인증완료</buttoni>
+                </div>
+            </div>
+            <div class="form__body__area">
+                <select value="지역을 선택하세요.">
+                    <option disabled selected>지역을 선택하세요.</option>
+                    <option>서울</option>
+                    <option>경기</option>
+                    <option>인천</option>
+                </select>
+            </div>
+            <div class="form__body__gender"><br>
+                <input type="radio" name="gender" class="form__body__gender__radio"><span
+                    class="body__gender__radio__content">여성</span>&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="radio" name="gender" class="form__body__gender__radio"><span
+                    class="body__gender__radio__content">남성</span>
+            </div>
+
+        </div>
+        <hr>
+        <div class="form__footer">
+            <button class="form__footer__submit">
+                <span class="form__footer__submit__font">가입하기</span>
+            </button>
+        </div>
+    </div>
+</body>
+
+</html>

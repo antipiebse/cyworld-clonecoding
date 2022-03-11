@@ -1,0 +1,230 @@
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+* {
+    box-sizing: border-box;
+}
+body {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.form {
+    width: 540px;
+    height: 960px;
+    background-color: #FFFFFF;
+    border: 1px solid #aacdff;
+    box-shadow: 7px 7px 39px rgba(0,104,255,0.25);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form__header {
+    width: 380px;
+    height: 47px;
+    margin: 45px 100px ;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 47px;
+    color: #0068FF;
+}
+
+.form__body {
+    padding-top:40px;
+    width: 380px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+ul {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 0px;
+}
+
+.form__body__input__content {
+    width: 380px;
+    height: 60px;
+    font-size: 16px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    background: #FFFFFF;
+    border: 1px solid #D2D2D2;
+    border-radius: 7px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.form__body__input__content input {
+    width: 262.58px;
+    height: 24px;
+    left: 782.68px;
+    top: 303px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #797979;
+    border: none;
+}
+
+
+.form__body__input__content::placeholder {
+    text-align: left;
+}
+.form__body__input__content:focus {
+    outline: none;
+    border: 1px solid #0068FF;
+}
+
+
+
+/* body__content들 */
+.auth_1, .auth_2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    
+}
+
+.auth_1 #auth, .auth_2 #time, .auth_1 button, .auth_2 button{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    text-align: right;
+    color: #0068FF;
+}
+.auth_1 button, .auth_2 button {
+    width: 120px;
+    height: 40px;
+    background: #FFFFFF;
+    border: 1px solid #D2D2D2;
+    border-radius: 7px;
+    font-size: 16px;
+    text-align: center;
+    line-height: 25px;
+}
+
+.auth_1 button:hover, .auth_2 button:hover {
+    background: #0070ff;
+    border: 1px solid #0068FF;
+    border-radius: 10px;
+    color: white;
+}
+
+
+.form__body__auth button{
+    width: 120px;
+    height: 24px;
+    margin-left: 15px;
+}
+
+.form__body__area {
+    width: 100%;
+}
+.form__body__area select {
+    width: 100%;
+    height: 60px;
+    background: #FFFFFF;
+    border: 1px solid #D2D2D2;
+    border-radius: 7px;
+    color: #797979;
+    font-weight: 400;
+    font-size: 16px;    
+}
+
+
+.form__body__gender {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom:25px;
+    margin-top: 25px;
+}
+
+
+.form__body__gender__radio{
+    appearance: none;
+    width: 20px;
+    height: 19.95px;
+    background: #EBEBEB;
+    border: 1px solid #D2D2D2;
+    border-radius: 100%;
+}
+.form__body__gender__radio:checked {
+    background-color: rgb(25, 118, 248);
+    border: none;
+    border-radius: 100%;
+}
+
+.body__gender__radio__content{
+    width: 30px;
+    height: 23.94px;
+    font-family: "Noto Sans KR", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+}
+.form__body__phone {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.form__body__phone input{
+    width: 100px;
+    height: 40px;
+    background: #FFFFFF;
+    border: 1px solid #D2D2D2;
+    border-radius: 7px;
+}
+
+
+
+hr {
+    width: 380px;
+    border-top: 1px solid #cfcfcf;
+    margin-bottom: 0px;
+}
+
+.form__footer__submit {
+    width: 380px;
+    height: 75px;
+    background-color: #FFFFFF;
+    border: 1px solid #0068FF;
+    border-radius: 10px;
+    transition-duration: 0.4s;
+    margin: 30px 100px 70px 100px;
+}
+
+.form__footer__submit__font {
+    font-family: "Noto Sans KR", sans-serif;   
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 27px;
+    text-align: center;
+    color: #0068FF;
+}
+
+.form__footer__submit:hover{
+    background: #0070ff;
+    border: 1px solid #0068FF;
+    border-radius: 10px;
+}
+
+.form__footer__submit:hover .form__footer__submit__font {
+    color: white;
+}
