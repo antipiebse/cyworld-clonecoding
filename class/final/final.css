@@ -93,7 +93,7 @@ ul {
     justify-content: right;
     margin-top: 25px;
     margin-bottom: 25px;
-    
+    align-items: center;
 }
 
 .auth_1 #auth, .auth_2 #time, .auth_1 button, .auth_2 button{
@@ -113,6 +113,8 @@ ul {
     font-size: 16px;
     text-align: center;
     line-height: 25px;
+    transition-duration: 0.4s;
+
 }
 
 .auth_1 button:hover, .auth_2 button:hover {
@@ -125,7 +127,7 @@ ul {
 
 .form__body__auth button{
     width: 120px;
-    height: 24px;
+    height: 40px;
     margin-left: 15px;
 }
 
